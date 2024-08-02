@@ -181,6 +181,23 @@ let count2 = 0;
 let hole = new Blackhole(random(0, width), random(0, height), true);
 let hole2 = new Redhole(random(0, width), random(0, height), true);
 
+//define array to store balls
+let balls = [];
+while (balls.length < 20) {
+  let size = random(10, 20);
+  let ball = new Ball(
+    random(0 + size, width - size),
+    random(0 + size, height - size),
+    random(-1, 10),
+    random(-1, 10),
+    `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`,
+    size,
+    true
+  );
+  balls.push(ball);
+}
+
+
 
 
 

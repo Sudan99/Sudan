@@ -63,6 +63,47 @@ Ball.prototype.collision = function () {
     }
   }
 };
+function Blackhole(x, y, velX, velY, color, size, exist) {
+  Shape.call(this, x, y, 20, 20, exist);
+  this.color = "white";
+  this.size = 15;
+}
+Blackhole.prototype.draw = function () {
+  ctx.beginPath();
+  ctx.strokeStyle = this.color;
+  ctx.lineWidth = 3;
+  ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+  ctx.stroke();
+};
+Blackhole.prototype.setBound = function () {
+  if (this.x + this.size >= width) {
+    this.x -= this.size;
+  } else if (this.x - this.size <= 0) {
+    this.x += this.size;
+  } else if (this.y + this.size >= height) {
+    this.y -= this.size;
+  } else if (this.y - this.size <= 0) {
+    this.y += this.size;
+  }
+};
+Blackhole.prototype.control = function () {
+  let presskey = this;
+  window.onkeypress = function (e) {
+    if (e.key === "a") {
+      presskey.x -= presskey.velX;
+    }
+    if (e.key === "d") {
+      presskey.x += presskey.velX;
+    }
+    if (e.key === "w") {
+      presskey.y -= presskey.velY;
+    }
+    if (e.key === "s") {
+      presskey.y += presskey.velY;
+    }
+  };
+};
+
 
 
 

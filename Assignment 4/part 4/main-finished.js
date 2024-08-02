@@ -103,6 +103,22 @@ Blackhole.prototype.control = function () {
     }
   };
 };
+Blackhole.prototype.collision = function () {
+  for (let k = 0; k < balls.length; k++) {
+    if (balls[k].exist === true) {
+      const dx = this.x - balls[k].x;
+      const dy = this.y - balls[k].y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < this.size + balls[k].size) {
+        balls[k].exist = false;
+        count1++;
+        para1.textContent = "Player 1 ball count: " + count1;
+      }
+    }
+  }
+};
+
 
 
 

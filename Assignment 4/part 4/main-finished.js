@@ -196,6 +196,32 @@ while (balls.length < 20) {
   );
   balls.push(ball);
 }
+//draw balls
+
+function loop() {
+  ctx.fillStyle = "rgb(0,0,0, .5)";
+  ctx.fillRect(0, 0, width, height);
+
+  for (let i = 0; i < balls.length; i++) {
+    if (balls[i].exist === true) {
+      balls[i].draw();
+      balls[i].update();
+      balls[i].collision();
+    }
+  }
+  hole.draw();
+  hole.setBound();
+  hole.collision();
+  hole.control();
+
+  hole2.draw();
+  hole2.setBound();
+  hole2.collision();
+  hole2.control();
+
+  requestAnimationFrame(loop);
+}
+loop();
 
 
 

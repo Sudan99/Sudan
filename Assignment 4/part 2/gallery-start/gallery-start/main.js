@@ -12,7 +12,7 @@ const alts = {
   'pic3.jpg' : 'Purple and white pansies',
   'pic4.jpg' : 'Section of wall from a pharoah\'s tomb',
   'pic5.jpg' : 'Large moth on a leaf'
-
+}
 
 /* Looping through images */
 for (const image of images) {
@@ -24,7 +24,7 @@ for (const image of images) {
       displayedImage.src = e.target.src;
       displayedImage.alt = e.target.alt;
     });
-  }
+}
 
 /* Wiring up the Darken/Lighten button */
 

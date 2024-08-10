@@ -81,6 +81,17 @@ function toggleTranscript() {
   }
 };
 
+// Comments button
+// make "show comments" div button able to be activated with Enter/Return key
+const commentBtn = document.querySelector(".show-hide")
+
+commentBtn.addEventListener("keydown", (e) => {
+  if(e.keyCode === 13) { // The Enter/Return key
+    document.activeElement.click();
+  }
+});
+
+
 
 
 

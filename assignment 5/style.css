@@ -84,12 +84,12 @@ nav li {
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #081C15;
 }
 
 div[class="nav"] .search {

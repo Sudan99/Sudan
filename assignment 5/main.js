@@ -37,5 +37,32 @@ function submitComment() {
   const nameValue = nameField.value;
   const commentValue = commentField.value;
 
+  // Make author and message tabbable
+  namePara.setAttribute("tabindex", "0");
+  commentPara.setAttribute("tabindex", "0");
+
+  // Give author and comment labels
+  nameLabel.textContent = "Author: ";
+  commentLabel.textContent = "Comment: ";
+
+  namePara.appendChild(nameLabel);
+  commentPara.appendChild(commentLabel);
+  
+  // Set input from form
+  namePara.innerHTML += nameValue;
+  commentPara.innerHTML += commentValue;
+
+  console.log("attr: ", namePara.getAttribute("tabindex"));
+
+  list.appendChild(listItem);
+  listItem.appendChild(namePara);
+  listItem.appendChild(commentPara);
+
+  console.log("namePara: ", namePara);
+
+  nameField.value = '';
+  commentField.value = '';
+}
+
 
 

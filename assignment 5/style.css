@@ -218,19 +218,20 @@ button:active {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: #d8f3dc;
   padding: 10px;
+  border: 1px solid #081C15;
 }
 
 .show-hide {
   cursor: pointer;
 }
 
-.comments font[size="6"] {
+.comments h2 {
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
+.comments h2:nth-of-type(2) {
   margin-bottom: 0;
 }
 
@@ -249,7 +250,8 @@ button:active {
   text-align: right;
 }
 
-.comment-form input {
+.comment-form input, 
+.comment-form button {
   margin-left: 1rem;
   flex: 6;
 }
@@ -259,13 +261,14 @@ button:active {
   width: 150px;
 }
 
-.comment-form input, .comment-form label, .show-hide {
+.comment-form input, .comment-form label,
+.comment-form button, .show-hide {
   font-size: 1.6rem;
   line-height: 32px;
 }
 
-.comment-form input[type="submit"], .show-hide {
-  background: #333;
+.comment-form button, .show-hide {
+  background: #081C15;
   border: 0;
   color: white;
 }

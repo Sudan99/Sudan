@@ -91,6 +91,14 @@ commentBtn.addEventListener("keydown", (e) => {
   }
 });
 
+// Skip to main content link active styling
+const skipToContentLink = document.querySelector("#skip-to-content-link");
+
+skipToContentLink.addEventListener("focus", (e) => {
+  // console.log("her")
+  skipToContentLink.classList.toggle("skip-to-content-link-visible");
+})
+
 
 
 

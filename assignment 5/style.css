@@ -51,8 +51,8 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+h3 {
+  font-size: 2.2rem;
 }
 
 article, footer, .secondary {

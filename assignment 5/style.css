@@ -63,7 +63,7 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav {
   height: 50px;
   background-color: ff80ff;
   display: flex;
@@ -71,14 +71,14 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;

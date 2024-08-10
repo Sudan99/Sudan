@@ -273,10 +273,15 @@ button:active {
   color: white;
 }
 
-.comment-form input[type="submit"] {
-  width: 30%;
-  display: block;
+.comment-form div[id="submit"] {
   margin: 0 auto;
+}
+
+.comment-form button {
+  display: block;
+  margin: 0 3rem 1rem;
+  float: right;
+  padding: 0 2rem;
 }
 
 .comment-container {
@@ -295,4 +300,18 @@ button:active {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+.comment-container li p span {
+  font-size: 0;
+}
+
+/* Skip to main content */
+.skip-to-content-link {
+  font-size: 0;
+}
+
+.skip-to-content-link-visible {
+  font-size: 18px;
+  background-color: #B7E4C7;
 }

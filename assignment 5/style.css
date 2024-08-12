@@ -150,6 +150,10 @@ table {
   border: 1px solid #081C15;
 }
 
+table caption {
+  color: #081c15;
+}
+
 th, td {
   padding: 10px;
 }

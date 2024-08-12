@@ -144,8 +144,10 @@ footer {
 
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: #004D38;
+  color: #FFFFFF;
   border-collapse: collapse;
+  border: 1px solid #081C15;
 }
 
 th, td {

@@ -51,8 +51,8 @@ p, li, table {
 
 /* || header layout */
 
-h3 {
-  font-size: 2.2rem;
+nav, article, footer, .secondary {
+  background-color: #B7E4C7;
 }
 
 article, footer, .secondary {

@@ -163,7 +163,7 @@ td {
 }
 
 th[scope="col"] {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #081C15;
 }
 
 tbody tr:nth-child(odd) {

@@ -118,6 +118,10 @@ nav .search {
   color: white;
 }
 
+.search label {
+  width: 0;
+}
+
 /* || main layout */
 
 main {
